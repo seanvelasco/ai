@@ -1,0 +1,22 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.record {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-height: 10rem;
+	max-width: 10rem;
+	min-height: 10rem;
+	min-width: 10rem;
+	height: 100%;
+	width: 100%;
+	border: none;
+	border-radius: 2.5rem;
+	background-color: var(--brand);
+	cursor: pointer;
+}

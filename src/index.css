@@ -1,0 +1,81 @@
+:root {
+	color-scheme: dark light;
+	font-family: 'Nunito Sans', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	line-height: 1.5;
+	font-variation-settings:
+		'wdth' 100,
+		'YTLC' 500;
+	background-color: var(--background);
+	color: var(--text);
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	--text: #dce6ec;
+	--background: #1f1f1f;
+	--border: #3a3a3a;
+	--brand: #0096fa;
+	--subtle: rgb(133, 133, 133);
+}
+
+/* @media (prefers-color-scheme: light) {
+	:root {
+		--text: rgb(75, 75, 75);
+		--background: rgb(255, 255, 255);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text: rgb(75, 75, 75);
+		--background: rgb(255, 255, 255);
+	}
+} */
+
+html {
+	overscroll-behavior: none;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+	overflow: auto;
+	overscroll-behavior: none;
+}
+
+#root {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	inset: 0;
+	position: relative;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+p,
+a,
+span,
+label,
+button {
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+a:hover {
+	text-decoration: underline;
+}

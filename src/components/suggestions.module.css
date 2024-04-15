@@ -1,0 +1,22 @@
+.suggestions {
+	margin-top: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.75rem;
+	padding: 1rem 0;
+}
+
+.suggestion {
+	padding: 1rem;
+	border-radius: 0.875rem;
+	background: var(--background);
+	color: var(--text);
+	border: none;
+	text-align: left;
+	cursor: pointer;
+	border: 2px solid var(--border);
+}
+
+.suggestion:hover {
+	/* background: #f5f4f5; */
+}
