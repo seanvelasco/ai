@@ -6,17 +6,6 @@ import ConversationPage from './pages/Conversation'
 import SpeakingPage from './pages/Speaking'
 import TranslationPage from './pages/Translation'
 
-// to-do: figure out proper typing for directives and recognize directive imports and usage
-
-declare module 'solid-js' {
-	namespace JSX {
-		interface Directives {
-			submitOnEnter: unknown
-			autoResize: unknown
-		}
-	}
-}
-
 const root = document.getElementById('root')
 
 render(

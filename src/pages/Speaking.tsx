@@ -1,10 +1,7 @@
 import { createSignal, createEffect } from 'solid-js'
 import styles from './Speaking.module.css'
-import mic from '../assets/mic.svg'
 
 const SpeakingPage = () => {
-	const [audioDevice, setAudioDevice] = createSignal<MediaStream>()
-	const [recorder, setRecorder] = createSignal<MediaRecorder>()
 	const [audio, setAudio] = createSignal<Blob[]>([])
 	const [listening, setListening] = createSignal(false)
 

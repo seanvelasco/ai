@@ -1,3 +1,11 @@
+declare module 'solid-js' {
+	namespace JSX {
+		interface Directives {
+			submitOnEnter: unknown
+		}
+	}
+}
+
 const submitOnEnter = (element: HTMLTextAreaElement) => {
 	const onKeyDown = (event: KeyboardEvent) => {
 		if (event.key === 'Enter' && !event.shiftKey) {

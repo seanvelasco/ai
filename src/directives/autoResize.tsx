@@ -1,3 +1,11 @@
+declare module 'solid-js' {
+	namespace JSX {
+		interface Directives {
+			autoResize: unknown
+		}
+	}
+}
+
 const autoResize = (element: HTMLTextAreaElement) => {
 	const initialHeight = element.style.height
 
