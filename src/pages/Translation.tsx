@@ -2,6 +2,8 @@ import { createSignal, Show } from 'solid-js'
 import { useAI } from '../states/ai'
 import { debounce } from '../helpers/debounce'
 import styles from './Translation.module.css'
+// @ts-ignore
+import autoResize from '../directives/autoResize'
 
 // to-do:
 // better debounce helper
