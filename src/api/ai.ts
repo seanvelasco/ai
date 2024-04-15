@@ -1,5 +1,6 @@
-const BASE_URL =
-	'https://slater-test.seanvelasco.workers.dev' ?? 'http://localhost:8787'
+let DEV = false
+
+const BASE_URL = !DEV ? 'https://api.slater.sean.app' : 'http://localhost:8787'
 
 export const fetchCompletion = async (message: string) => {
 	const request = new Request(`${BASE_URL}?prompt=${message}`, {
